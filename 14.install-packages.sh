@@ -35,6 +35,6 @@ do
     then
           echo -e "$i already installed...$Y SKIPPING $N"
         else
-           dnf install $i
+           echo "$i not installed...Need to install"
     fi
 done
