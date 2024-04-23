@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COURSE="DevOps from current script"
+COURSE="DevOps from Current script"
 
 echo "Before calling other script, course: $COURSE"
 echo "Process ID of current shell script: $$"
