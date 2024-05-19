@@ -3,7 +3,6 @@
 DISK_USAGE=$(df -hT | grep xfs)
 DISK_THRESHOLD=6
 MESSAGE=""
-
 while IFS= read -r line
 do
     USAGE=$(echo $line | awk -F " " '{print $6F}' | cut -d "%" -f1 )
@@ -16,6 +15,6 @@ done <<< $DISK_USAGE
 
 echo -e "Message: $MESSAGE"
 
-echo "$MESSAGE" | mail -s "Disk Usage Alert" neelareddy.i10204@gmail.com
+echo "$MESSAGE" | mail -s "Disk Usage Alert" shushma.valmiki@gmail.com
 
 # echo "body" | mail -s "subject" to-address
